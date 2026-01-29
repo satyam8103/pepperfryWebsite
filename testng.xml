@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Pepperfry Automation Suite" verbose="1">
+
+    <!-- 🔹 Parameter for cross-browser execution -->
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Pepperfry End-to-End Tests">
+
+        <classes>
+            <class name="org.automation.pepperfry.tests.TC01_Validate_Title"/>
+            <class name="org.automation.pepperfry.tests.TC02_Count_Furniture"/>
+            <class name="org.automation.pepperfry.tests.TC03_Filter_Metal_Benches"/>
+            <class name="org.automation.pepperfry.tests.TC04_Screenshot_And_Count"/>
+        </classes>
+
+    </test>
+
+</suite>
